@@ -1,0 +1,130 @@
+.head {
+  margin-top: 120px;
+}
+
+.head__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.head__left {
+  width: 550px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  h1 {
+    font-size: 64px;
+    font-family: "Raleway-eb", sans-serif;
+    font-weight: 800;
+
+    @media (max-width: 625px) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 40px;
+    }
+  }
+
+  p {
+    @media (max-width: 425px) {
+      font-size: 14px;
+    }
+  }
+
+  a {
+    display: block;
+
+    padding: 20px;
+    width: 265px;
+
+    background: var(--color-blue);
+    color: var(--color-white);
+
+    text-align: center;
+    border-radius: 15px;
+
+    transition: all 0.4s ease;
+    border: 1px solid var(--color-blue);
+
+    &:hover {
+      color: var(--color-black);
+      background: none;
+      margin-top: 5px;
+    }
+  }
+}
+
+.head__right {
+  &::before {
+    content: "";
+    position: absolute;
+
+    left: 50%;
+    top: 45%;
+
+    width: 556px;
+    height: 317px;
+
+    z-index: -1;
+
+    background-image: url("../../../public/images/dots.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 1020px) {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    top: 20%;
+    transform: rotate(45deg);
+
+    width: 420px;
+    height: 610px;
+
+    z-index: -2;
+
+    background: rgba(0, 149, 255, 0.5);
+    filter: blur(110px);
+    border-radius: 200px;
+
+    @media (max-width: 1380px) {
+      width: 300px;
+    }
+
+    @media (max-width: 1020px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.head__right > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 435px;
+  height: 450px;
+  border-radius: 30px;
+
+  background: var(--color-white);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.3);
+}

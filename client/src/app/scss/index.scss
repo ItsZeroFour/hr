@@ -1,0 +1,110 @@
+@import "./fonts";
+@import "./reset";
+@import "./vars";
+
+/* BASIC SETTINGS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100vw;
+  font-size: 20px;
+
+  @media (min-width: 1900px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  background: var(--color-white);
+  color: var(--color-black);
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-block-start: 75px;
+}
+
+::-webkit-scrollbar {
+  background: var(--color-white);
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-blue);
+  border-radius: 5px;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1120px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: inherit;
+  line-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+textarea {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+
+.page-loader {
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+  background: var(--color-white);
+  padding: 60px;
+  box-shadow: 0px 0px 0px 50px var(--color-black);
+}
+
+main {
+  margin-bottom: 100px;
+}

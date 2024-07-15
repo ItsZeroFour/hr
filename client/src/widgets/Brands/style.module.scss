@@ -1,0 +1,43 @@
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.brands {
+  width: 100vw;
+  overflow: hidden;
+  margin-top: 150px;
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-left: 100px;
+    transition: all 0.2s ease;
+    animation: scroll-left 20s linear infinite;
+    width: 200%;
+
+    li {
+      flex: 0 0 auto;
+    }
+
+    @media (max-width: 520px) {
+      width: 1000%;
+      animation: scroll-left 20s linear infinite;
+    }
+  }
+}
+
+.brands__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  p {
+    text-align: center;
+  }
+}
