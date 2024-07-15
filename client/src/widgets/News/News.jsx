@@ -51,7 +51,7 @@ const News = () => {
         >
           <ul>
             <li>
-              <Link className={style.news__item} href="" target="_blank">
+              <Link className={style.news__item} href="https://secrets.tinkoff.ru/blogi-kompanij/sozdanie-otdela-prodazh-s-nulya/" target="_blank">
                 <Image src={newsImg1} alt="news img 1" />
                 <h3>Как создать отдел продаж с нуля и развивать бизнес?</h3>
                 <p>
@@ -62,7 +62,7 @@ const News = () => {
             </li>
 
             <li>
-              <Link className={style.news__item} href="" target="_blank">
+              <Link className={style.news__item} href="https://rookee.ru/blog/otdel-marketinga-organizatsii-chem-zanimaetsya-struktura-i-funktsii/amp/" target="_blank">
                 <Image src={newsImg2} alt="news img 2" />
                 <h3>
                   Отдел маркетинга организации: чем занимается, структура и
@@ -77,7 +77,7 @@ const News = () => {
             </li>
 
             <li>
-              <Link className={style.news__item} href="" target="_blank">
+              <Link className={style.news__item} href="https://journal.tinkoff.ru/marketing-ads/" target="_blank">
                 <Image src={newsImg3} alt="news img 3" />
                 <h3>Основы маркетинга для бизнеса: реклама</h3>
                 <p>
