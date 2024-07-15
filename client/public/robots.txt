@@ -12,3 +12,4 @@ Host: https://salesprocon.ru
 
 # Sitemaps
 Sitemap: https://salesprocon.ru/sitemap.xml
+Sitemap: https://salesprocon.ru/sitemap-0.xml

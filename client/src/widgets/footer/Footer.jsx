@@ -32,16 +32,16 @@ const Footer = () => {
               <p>Мы в соц. сетях</p>
               <ul>
                 <li>
-                  <Vk />
+                 <Link href="#"><Vk /></Link>
                 </li>
 
                 <li>
-                  <Telegram />
+                  <Link href="#"><Telegram /></Link>
                 </li>
               </ul>
               <Link href="/authors">Авторы</Link>
               <Link href="https://uwustudio.ru/" style={{ display: "none" }}>
-                https://uwustudio.ru/
+                UWUSTUDIO
               </Link>
             </div>
           </div>
