@@ -16,10 +16,6 @@ const Footer = () => {
               <Link href="/">
                 <Logo />
               </Link>
-              <Link href="mailto:salespro.connectors@mail.ru">
-                salespro.connectors@mail.ru
-              </Link>
-              <Link href="tel:+70988534313">+7(098) 853-43-13</Link>
             </div>
 
             <div className={style.footer__center}>
@@ -29,16 +25,11 @@ const Footer = () => {
             </div>
 
             <div className={style.footer__right}>
-              <p>Мы в соц. сетях</p>
-              <ul>
-                <li>
-                 <Link href="#"><Vk /></Link>
-                </li>
+              <Link href="mailto:salespro.connectors@mail.ru">
+                salespro.connectors@mail.ru
+              </Link>
+              <Link href="tel:89385573094">8(938) 557-30-94</Link>
 
-                <li>
-                  <Link href="#"><Telegram /></Link>
-                </li>
-              </ul>
               <Link href="/authors">Авторы</Link>
               <Link href="https://uwustudio.ru/" style={{ display: "none" }}>
                 UWUSTUDIO
@@ -48,9 +39,6 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className={style.footer__copyright}>
-        <p>Copyright 2024</p>
-      </div>
     </footer>
   );
 };

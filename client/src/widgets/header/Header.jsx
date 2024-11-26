@@ -28,7 +28,7 @@ const Header = () => {
             </ul>
           </nav>
 
-          <Link href="tel:+70988534313">+7(098) 853-43-13</Link>
+              <Link href="tel:89385573094">8(938) 557-30-94</Link>
         </div>
       </div>
     </header>
